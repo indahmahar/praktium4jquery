@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>belajar 6</title>
+	<script src="jquery-3.6.0.min.js"> //Pemanggilan suatu libray jquery dalam disk kita </script>
+	<script type="text/javascript" >
+		$(document).ready(function(){ // pembuatan fuction yang akan menyimpan suatu perintah
+		setTimeout(function(){// suatu fungsi yang berfungsi untuk memberi waktu jeda 
+		$("#kotak").fadeOut("slow",function(){ // pada fungsi ini terdapat efek fadeout yang dimana berfungsi untuk melenyapkan elemen pada web / memudar, serta terdapat efek slow untuk memperlambat  
+		$("#kotak").remove(); //pada fungsi ini terdapat efek remove kotak akan benar-benar hilang
+		});		
+		}, 3000);// waktu fadeout yang dibutuhkan contohnya 3 detik maka elements akan lenyap
+		});
+	</script>
+	<style type="text/css">
+		#kotak{
+			width: 300px;
+			height: 59px;
+			background: lightyellow;
+			border: 1px solid black;
+			padding: 5px;
+		}
+	</style> <!-- Pada css terdapat ukuran dari element yakni lebar dan tinggi. Background elements akan berubah menjadi lightyellow, memiliki border dan padding-->
+</head>
+<body>
+<h3 id="kotak"> <!-- Membuat suatu id utuk di deklarasikan di javascript-->
+	perhatikan baik - baik teks ini, karena 
+	teks ini akan hilang dalam hitugan 3 detik
+</h3>
+</body>
+</html>

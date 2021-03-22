@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="jquery-3.6.0.min.js"> // Memanggil library jquery</script>
+<script>
+	$(document).ready(function() {
+		$("#tombol_fade_out").click(function() { // id/elements pada tombol fade out dideklarasi
+			$("#box").fadeOut("slow"); // pendeklarasian #box dan membuat perintah fade out (menghilang) secara perlahan
+	})
+		$("#tombol_fade_in").click(function() { // id/elements pada tombol fade id dideklarasi
+			$("#box").fadeIn("fast"); //  pendeklarasian #box dan membuat perintah fade in (menampilkan) secara cepat
+	})
+		$("#tombol_fade_to").click(function() { // id/elements pada tombol fade to dideklarasi
+			$("#box").fadeTo("slow", 0.3); //  pendeklarasian #box dan membuat perintah fade to (transparan) secara perlahan dalam 0.3 detik
+	})
+	});
+	
+
+</script>
+<style type="text/css">
+	#box {
+		width: 120px;
+		height: 80px;
+		background-color: yellow;
+		border: 1px solid black;
+	} 
+</style> <!-- Membuat box mempunyai width dan height. Terdapat background color berwarna yellow serta memiliki border -->
+</head>
+<body>
+<h2>Efek Fade</h2>
+<button id="tombol_fade_out">Fade Out</button> <!-- Pembuatan botton fade out-->
+<button id="tombol_fade_in">Fade In</button>  <!-- Pembuatan botton fade in-->
+<button id="tombol_fade_to">Fade To 0.3s</button> <!-- Pembuatan botton fade to-->
+<br><br>
+<div id="box"></div>
+</body>
+</html>

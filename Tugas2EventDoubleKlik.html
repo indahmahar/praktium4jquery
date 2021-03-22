@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <script src="jquery-3.6.0.min.js"> //Pemanggilan suatu libray jquery dalam disk kita </script>
+	<script type="text/javascript" >
+		$(document).ready(function(){ //membuat suatu fungsi
+		 $(".box1").dblclick(function() {$(".box1").hide("slow")}); //mendeklarasikan perintah double click dan hide
+		 $(".box2").dblclick(function() {$(".box2").hide("slow")}); //mendeklarasikan perintah double click dan hide
+		 $(".box3").dblclick(function() {$(".box3").hide("slow")}); //mendeklarasikan perintah double click dan hide
+		 $(".box4").dblclick(function() {$(".box4").hide("slow")}); //mendeklarasikan perintah double click dan hide
+		});
+	</script>
+		<style type="text/css">
+		 .kotak1{width: 100px;height: 100px; background: #FF0000; float: left; margin-left: 20px;}
+		 .kotak2{width: 100px;height: 100px; background: #FF0000; float: left; margin-left: 20px;}
+		 .kotak3{width: 100px;height: 100px; background: #FF0000; float: left; margin-left: 20px;}	
+		 .kotak4{width: 100px;height: 100px; background: #FF0000; float: left; margin-left: 20px;}	
+		</style> <!-- pembuatan kotak yang memiliki weight dan height, memiliki background dan memiliki posisi di sebalah kiri-->
+    <style>
+        .box1{ width: 100px; height:100px; background: #FFFF00;  float: left; padding: 2px;}
+        .box2{ width: 100px; height: 100px; background: #FFFF00; float: left; padding: 2px;}
+        .box3{ width: 100px; height: 100px; background: #FFFF00; float: left; padding: 2px;}
+        .box4{ width: 100px; height: 100px; background: #FFFF00; float: left; padding: 2px;}
+    </style> <!-- pembuatan kotak yang memiliki weight dan height, memiliki background dan memiliki posisi di sebalah kiri-->
+    <style type="text/css">
+    	.kontainer{
+    		display: flex;
+    		height: 100px;
+    		margin: 20px auto;
+        	}
+    </style> <!-- display semua kotak sejajar, memiliki margin dan height-->
+    <body> 
+    	<p>klik dua kali pada kotak untuk mengubah warna</p>
+           <div class="kontainer"> <!-- pembuatan suatu class-->
+           <div class="kotak1"> <!-- pembuatan suatu class-->
+            <div class="box1" ></div> <br> <!-- pembuatan suatu class-->
+            </div> <br>
+        	<div class="kotak2"> <!-- pembuatan suatu class-->
+            <div class="box2" ></div> <br> <!-- pembuatan suatu class-->
+            </div> <br>
+        	<div class="kotak3"> <!-- pembuatan suatu class-->
+            <div class="box3" ></div> <br><!-- pembuatan suatu class-->
+            </div> <br>
+            <div class="kotak4"> <!-- pembuatan suatu class-->
+            <div class="box4" ></div> <br> <!-- pembuatan suatu class-->
+            </div> <br>     
+    		</div>
+    	</div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-3.6.0.min.js"> //Pemanggilan suatu libray jquery dalam disk kita </script>
+	<script type="text/javascript" >
+		$(document).ready(function(){ // pembuatan fuction yang akan menyimpan suatu perintah
+		$("#daftar").addClass("merahkuning"); //pengambilan id yang di buat pada ul, dan pembuatan class 
+		});
+	</script> 
+	<style type="text/css"> 
+		.merahkuning {
+			color: orange;
+			font-weight: bold;
+			background-color:green;
+			padding: 3px;
+		}
+	</style> <!-- list text akan berubah warna menjadi orange, ukuran font berubah, background color berwarna hijau, dan memiliki padding -->
+</head>
+<body>
+<div>
+	<p>paragraf pertama </p>  <!-- membuat suatu paragraf -->
+</div>
+ <div>
+ 	<ul id="daftar"> <!--Pembuatan id pada ul-->
+ 		<li> item 1</li> <!--Pembuatan list pertama-->
+ 		<li> item 2</li> <!--Pembuatan list kedua-->
+ 		<li> item 3</li> <!--Pembuatan list ketiga-->
+ </ul>
+ </div>
+</body>
+</html>

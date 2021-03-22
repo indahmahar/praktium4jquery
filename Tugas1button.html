@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar 1</title> 
+	<script src="jquery-3.6.0.min.js"> //Pemanggilan suatu libray jquery dalam disk kita </script>
+	<script type="text/javascript"> // Penanda bahwa bahasa yang terdapat dalam tag ini adalah javascript
+		$(document).ready(function(){ // pembuatan fuction yang akan menyimpan suatu perintah
+		$(".tampil").click(function() {$("#gambar").show("slow")}); //pembuatan perintah click yang tersimpan pada function untuk menampilkan gambar
+		$(".sembunyi").click(function() {$("#gambar").hide("slow")}); //pembuatan perintah click yang tersimpan pada function untuk menyembunyikan gambar	
+	});
+		$(document).ready(function(){
+		$(".tampil1").click(function() {$("#gambar1").show("slow")}); //pembuatan perintah click yang tersimpan pada function untuk menampilkan gambar
+		$(".sembunyi1").click(function() {$("#gambar1").hide("slow")}); //pembuatan perintah click yang tersimpan pada function untuk menyembunyikan gambar	
+	});
+		$(document).ready(function(){
+		$(".tampil2").click(function() {$("#gambar2").show("slow")}); //pembuatan perintah click yang tersimpan pada function untuk menampilkan gambar
+		$(".sembunyi2").click(function() {$("#gambar2").hide("slow")}); //pembuatan perintah click yang tersimpan pada function untuk menyembunyikan gambar	
+	});
+</script>
+</head>
+<body>
+	<button class="sembunyi">sembunyikan</button> <!-- pembuatan button sembunyi -->
+	<button class="tampil">Tampilkan</button> <br><br> <!-- pembuatan button tampil -->
+	<p><img id="gambar" src="b.jpg" width="400" height="200"></p><br>
+	<button class="sembunyi1">sembunyikan</button> <!-- pembuatan button sembunyi -->
+	<button class="tampil1">Tampilkan</button> <!-- pembuatan button tampil -->
+	<p><img id="gambar1" src="c.jpeg" width="400" height="200"></p><br>
+	<button class="sembunyi2">sembunyikan</button> <!-- pembuatan button sembunyi -->
+	<button class="tampil2">Tampilkan</button> <!-- pembuatan button tampil -->
+	<p><img id="gambar2" src="a.jpg" width="400" height="200"></p><br>
+</body>
+</html>
